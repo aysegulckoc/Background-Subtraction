@@ -29,7 +29,7 @@ while True:
     white_pix = np.sum(fgmask == 255)
 
     metric = white_pix / total_pix
-    liste.append(metric)
+    pix_list.append(metric)
 
     cv.imshow('Frame', frame)
     cv.imshow('FG MASK Frame', fgmask)
@@ -38,7 +38,7 @@ while True:
     if keyboard == 'q' or keyboard == 27:
         break
 
-plt.plot(liste)
+plt.plot(pix_list)
 plt.xlabel("x")
 plt.ylabel("y")
 plt.show()
