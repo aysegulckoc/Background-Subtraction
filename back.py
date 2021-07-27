@@ -9,7 +9,7 @@ kernel = np.ones((10, 10), np.uint8)
 fgbg = cv.bgsegm.createBackgroundSubtractorGMG()
 # fgbg = cv.createBackgroundSubtractorMOG2(detectShadows=True)
 # fgbg = cv.createBackgroundSubtractorKNN(detectShadows=True)
-liste = []
+pix_list = []
 while True:
     ret, old_frame = cap.read()
     frame = old_frame[550:850, 250:1150]
